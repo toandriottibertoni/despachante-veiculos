@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Integracao": {
+      "commandName": "Project",
+      "workingDirectory": "C:\\Users\\TOMAS\\Desktop\\Projetos\\App\\Integracao"
+    }
+  }
+}

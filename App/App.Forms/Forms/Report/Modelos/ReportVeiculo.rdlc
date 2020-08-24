@@ -1,0 +1,1439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Textbox Name="Renavam">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Renavam: </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!Renavam.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Renavam</rd:DefaultName>
+            <Top>3.19828cm</Top>
+            <Left>8.53312cm</Left>
+            <Height>0.6cm</Height>
+            <Width>7.65938cm</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox2">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>VEÍCULO</Value>
+                    <Style>
+                      <FontSize>20pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox2</rd:DefaultName>
+            <Top>0.76729cm</Top>
+            <Left>2.8903cm</Left>
+            <Height>0.83812cm</Height>
+            <Width>11.66179cm</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Image Name="Car">
+            <Source>Embedded</Source>
+            <Value>car</Value>
+            <Sizing>Fit</Sizing>
+            <Top>0.44979cm</Top>
+            <Left>0.44662cm</Left>
+            <Height>1.42062cm</Height>
+            <Width>2.26729cm</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
+          <Textbox Name="Textbox3">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>DADOS DO VEICULO:</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox3</rd:DefaultName>
+            <Top>2.04681cm</Top>
+            <Left>0.44662cm</Left>
+            <Height>0.6cm</Height>
+            <Width>16.07567cm</Width>
+            <ZIndex>3</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <BackgroundColor>Silver</BackgroundColor>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox4">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>PLACA: </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!Placa.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox4</rd:DefaultName>
+            <Top>3.19828cm</Top>
+            <Left>0.7112cm</Left>
+            <Height>0.6cm</Height>
+            <Width>7.2625cm</Width>
+            <ZIndex>4</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Chassi">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Chassi: </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!Chassi.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Chassi</rd:DefaultName>
+            <Top>4.2037cm</Top>
+            <Left>0.7112cm</Left>
+            <Height>0.6cm</Height>
+            <Width>8.65505cm</Width>
+            <ZIndex>5</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="AnoFab">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Ano Fab: </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!AnoFab.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>AnoFab</rd:DefaultName>
+            <Top>5.42078cm</Top>
+            <Left>0.7112cm</Left>
+            <Height>0.6cm</Height>
+            <Width>3.55833cm</Width>
+            <ZIndex>6</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="AnoMod">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Ano Mod: </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!AnoMod.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>AnoMod</rd:DefaultName>
+            <Top>5.42078cm</Top>
+            <Left>5.35433cm</Left>
+            <Height>0.6cm</Height>
+            <Width>3.61125cm</Width>
+            <ZIndex>7</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Cor">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Cor: </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!Cor.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Cor</rd:DefaultName>
+            <Top>4.2037cm</Top>
+            <Left>9.97981cm</Left>
+            <Height>0.6cm</Height>
+            <Width>6.21269cm</Width>
+            <ZIndex>8</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Combustivel">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Combustivel: </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!Combustivel.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Combustivel</rd:DefaultName>
+            <Top>5.42078cm</Top>
+            <Left>11.40292cm</Left>
+            <Height>0.6cm</Height>
+            <Width>4.78958cm</Width>
+            <ZIndex>9</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Descricao">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Modelo: </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!Descricao.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Descricao</rd:DefaultName>
+            <Top>6.5532cm</Top>
+            <Left>6.50558cm</Left>
+            <Height>0.6cm</Height>
+            <Width>9.68692cm</Width>
+            <ZIndex>10</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Marca">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Marca: </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!Marca.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Marca</rd:DefaultName>
+            <Top>6.5532cm</Top>
+            <Left>0.7112cm</Left>
+            <Height>0.6cm</Height>
+            <Width>5.41042cm</Width>
+            <ZIndex>11</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Endereco">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Endereço: </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!Endereco.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Endereco</rd:DefaultName>
+            <Top>8.48995cm</Top>
+            <Left>0.7112cm</Left>
+            <Height>0.6cm</Height>
+            <Width>15.4813cm</Width>
+            <ZIndex>12</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Cidade">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Cidade: </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!Cidade.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Cidade</rd:DefaultName>
+            <Top>9.57474cm</Top>
+            <Left>0.7112cm</Left>
+            <Height>0.6cm</Height>
+            <Width>8.65505cm</Width>
+            <ZIndex>13</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox5">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>DADOS DO POPRIETÁRIO:</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox3</rd:DefaultName>
+            <Top>10.53469cm</Top>
+            <Left>0.44662cm</Left>
+            <Height>0.6cm</Height>
+            <Width>16.07567cm</Width>
+            <ZIndex>14</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <BackgroundColor>Silver</BackgroundColor>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="PropNome">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Nome: </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!PropNome.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>PropNome</rd:DefaultName>
+            <Top>11.66495cm</Top>
+            <Left>0.7112cm</Left>
+            <Height>0.6cm</Height>
+            <Width>15.4813cm</Width>
+            <ZIndex>15</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="PropCpfCnpj">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>CPF/CNPJ: </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!PropCpfCnpj.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>PropCpfCnpj</rd:DefaultName>
+            <Top>12.64391cm</Top>
+            <Left>0.7112cm</Left>
+            <Height>0.6cm</Height>
+            <Width>6.38938cm</Width>
+            <ZIndex>16</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="PropEndereco">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Endereço:</Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!PropEndereco.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>PropEndereco</rd:DefaultName>
+            <Top>13.70224cm</Top>
+            <Left>0.7112cm</Left>
+            <Height>0.6cm</Height>
+            <Width>15.40193cm</Width>
+            <ZIndex>17</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="PropCidade">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Cidade: </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!PropCidade.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>PropCidade</rd:DefaultName>
+            <Top>14.65474cm</Top>
+            <Left>0.7112cm</Left>
+            <Height>0.6cm</Height>
+            <Width>8.57568cm</Width>
+            <ZIndex>18</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="ExecutionTime">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Globals!ExecutionTime</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>ExecutionTime</rd:DefaultName>
+            <Top>1.30569cm</Top>
+            <Left>12.69682cm</Left>
+            <Height>0.6cm</Height>
+            <Width>3.82547cm</Width>
+            <ZIndex>19</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Categoria">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Categoria: </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!Categoria.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Categoria</rd:DefaultName>
+            <Top>7.51601cm</Top>
+            <Left>0.7112cm</Left>
+            <Height>0.6cm</Height>
+            <Width>4.54205cm</Width>
+            <ZIndex>20</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Especie">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Especie: </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!Especie.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Especie</rd:DefaultName>
+            <Top>7.62184cm</Top>
+            <Left>6.50558cm</Left>
+            <Height>0.6cm</Height>
+            <Width>4.43146cm</Width>
+            <ZIndex>21</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox6">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>DADOS DA AQUISIÇÃO:</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox3</rd:DefaultName>
+            <Top>15.77344cm</Top>
+            <Left>0.42048cm</Left>
+            <Height>0.6cm</Height>
+            <Width>16.07567cm</Width>
+            <ZIndex>22</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <BackgroundColor>Silver</BackgroundColor>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="PropAnteriorNome">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Nome: </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!PropAnteriorNome.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>PropAnteriorNome</rd:DefaultName>
+            <Top>16.98308cm</Top>
+            <Left>0.73766cm</Left>
+            <Height>0.6cm</Height>
+            <Width>15.37547cm</Width>
+            <ZIndex>23</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="PropAnteriorCpfCnpj">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>CPF/CNPJ: </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!PropAnteriorCpfCnpj.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>PropAnteriorCpfCnpj</rd:DefaultName>
+            <Top>17.90912cm</Top>
+            <Left>0.73766cm</Left>
+            <Height>0.6cm</Height>
+            <Width>6.36292cm</Width>
+            <ZIndex>24</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="DataCompra">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Data: </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!DataCompra.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>DataCompra</rd:DefaultName>
+            <Top>18.68551cm</Top>
+            <Left>0.7112cm</Left>
+            <Height>0.6cm</Height>
+            <Width>3.95521cm</Width>
+            <ZIndex>25</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="ValorCompra">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Valor: </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!ValorCompra.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>ValorCompra</rd:DefaultName>
+            <Top>18.68551cm</Top>
+            <Left>5.73828cm</Left>
+            <Height>0.6cm</Height>
+            <Width>4.65984cm</Width>
+            <ZIndex>26</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="NumeroNota">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Nota  Fiscal: </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!NumeroNota.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>NumeroNota</rd:DefaultName>
+            <Top>18.68551cm</Top>
+            <Left>10.76537cm</Left>
+            <Height>0.6cm</Height>
+            <Width>5.3213cm</Width>
+            <ZIndex>27</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox7">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>DADOS DA VENDA:</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox3</rd:DefaultName>
+            <Top>20.01917cm</Top>
+            <Left>0.44694cm</Left>
+            <Height>0.6cm</Height>
+            <Width>16.07567cm</Width>
+            <ZIndex>28</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <BackgroundColor>Silver</BackgroundColor>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="PropAnteriorNome2">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Nome: </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!CompradorNome.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>PropAnteriorNome</rd:DefaultName>
+            <Top>21.22881cm</Top>
+            <Left>0.76412cm</Left>
+            <Height>0.6cm</Height>
+            <Width>15.37547cm</Width>
+            <ZIndex>29</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="PropAnteriorCpfCnpj2">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>CPF/CNPJ: </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!CpfCnpjComprador.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>PropAnteriorCpfCnpj</rd:DefaultName>
+            <Top>22.15485cm</Top>
+            <Left>0.76412cm</Left>
+            <Height>0.6cm</Height>
+            <Width>6.36292cm</Width>
+            <ZIndex>30</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="DataCompra2">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Data: </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!DataVenda.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>DataCompra</rd:DefaultName>
+            <Top>22.93124cm</Top>
+            <Left>0.73766cm</Left>
+            <Height>0.6cm</Height>
+            <Width>3.95521cm</Width>
+            <ZIndex>31</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="ValorCompra2">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Valor: </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!ValorVenda.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>ValorCompra</rd:DefaultName>
+            <Top>22.93124cm</Top>
+            <Left>5.76474cm</Left>
+            <Height>0.6cm</Height>
+            <Width>4.65984cm</Width>
+            <ZIndex>32</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+        </ReportItems>
+        <Height>10.04167in</Height>
+        <Style />
+      </Body>
+      <Width>6.66009in</Width>
+      <Page>
+        <PageHeight>29.7cm</PageHeight>
+        <PageWidth>21cm</PageWidth>
+        <LeftMargin>2cm</LeftMargin>
+        <RightMargin>2cm</RightMargin>
+        <TopMargin>2cm</TopMargin>
+        <BottomMargin>2cm</BottomMargin>
+        <ColumnSpacing>0.13cm</ColumnSpacing>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="Placa">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Renavam">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Chassi">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="AnoFab">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="AnoMod">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Cor">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Combustivel">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Descricao">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Marca">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Endereco">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Cidade">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PropNome">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PropCpfCnpj">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PropEndereco">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PropCidade">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Categoria">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Especie">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PropAnteriorNome">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PropAnteriorCpfCnpj">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DataCompra">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ValorCompra">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="NumeroNota">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CompradorNome">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CpfCnpjComprador">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DataVenda">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ValorVenda">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>7</NumberOfRows>
+      <CellDefinitions>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>Placa</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>Renavam</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>Chassi</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>3</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>AnoFab</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>AnoMod</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>Cor</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>Combustivel</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>3</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>Descricao</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>2</RowIndex>
+          <ParameterName>Marca</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>2</RowIndex>
+          <ParameterName>Endereco</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>2</RowIndex>
+          <ParameterName>Cidade</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>3</ColumnIndex>
+          <RowIndex>2</RowIndex>
+          <ParameterName>PropNome</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>3</RowIndex>
+          <ParameterName>PropCpfCnpj</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>3</RowIndex>
+          <ParameterName>PropEndereco</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>3</RowIndex>
+          <ParameterName>PropCidade</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>3</ColumnIndex>
+          <RowIndex>3</RowIndex>
+          <ParameterName>Categoria</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>4</RowIndex>
+          <ParameterName>Especie</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>4</RowIndex>
+          <ParameterName>PropAnteriorNome</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>4</RowIndex>
+          <ParameterName>PropAnteriorCpfCnpj</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>3</ColumnIndex>
+          <RowIndex>4</RowIndex>
+          <ParameterName>DataCompra</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>5</RowIndex>
+          <ParameterName>ValorCompra</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>5</RowIndex>
+          <ParameterName>NumeroNota</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>5</RowIndex>
+          <ParameterName>CompradorNome</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>3</ColumnIndex>
+          <RowIndex>5</RowIndex>
+          <ParameterName>CpfCnpjComprador</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>6</RowIndex>
+          <ParameterName>DataVenda</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>6</RowIndex>
+          <ParameterName>ValorVenda</ParameterName>
+        </CellDefinition>
+      </CellDefinitions>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+  <EmbeddedImages>
+    <EmbeddedImage Name="car">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>effeb364-b30a-4b67-b03c-4062040a45fd</rd:ReportID>
+</Report>

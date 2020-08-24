@@ -13,4 +13,4 @@ Projeto com intuito de automatizar e gerenciar a gestão de veiculos para pequen
 - C#
 
 
-![Alt text](/relative/blob/master/imgs/menu.jpg?raw=true "Optional Title")
+![Alt text](/relative/menu.jpg?raw=true "Optional Title")

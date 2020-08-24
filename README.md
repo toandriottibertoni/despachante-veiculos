@@ -11,3 +11,6 @@ Projeto com intuito de automatizar e gerenciar a gestão de veiculos para pequen
 - pode ser utilizado qualquer banco com suporte a migrations do ef core, porém está versão usa .sqlite
 - Winforms
 - C#
+
+
+![Alt text](/relative/blob/master/imgs/menu.jpg?raw=true "Optional Title")
